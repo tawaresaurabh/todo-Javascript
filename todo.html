@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<body>
+    <div class="container">
+        <h2 class="text-center">Todo List</h2>
+        <div class="form-group">
+            <label for="itemInput">Add Item</label>
+            <input type="text" class="form-control" name="" id="itemInput">
+        </div>        
+        <button id="addButton" class="btn btn-primary">Add</button>
+        <button id="clearButton" class="btn btn-danger">Clear List</button>
+        </br>
+        <div>
+            <table class="table table-hover table-fixed" id="todoTableId">
+                <thead>
+                    <tr>
+                        <th>TodoItems</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="todoTableBodyId">
+                </tbody>
+            </table>
+
+            <script src="todo.js"></script>
+        </div>
+    </div>
+</body>
+</head>
+
+</html>
