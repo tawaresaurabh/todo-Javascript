@@ -10,14 +10,25 @@
             <label for="itemInput">Add Item</label>
             <input type="text" class="form-control" name="" id="itemInput">
         </div>        
-        <button id="addButton" class="btn btn-primary">Add</button>
-        <button id="clearButton" class="btn btn-danger">Clear List</button>
+        <button id="addButton" class="btn btn-primary">Add</button>        
+        <button type="button" class="btn btn-primary">
+            Todo Count <span class="badge badge-light" id="totalCountSpanId"></span>
+          </button>
+        <button type="button" class="btn btn-primary">
+            Open Todo Count <span class="badge badge-light" id="openCountSpanId"></span>
+          </button>
+          <button type="button" class="btn btn-primary">
+            Done Todo Count <span class="badge badge-light" id="doneCountSpanId"></span>
+          </button>
+          <button id="clearButton" class="btn btn-danger">Clear List</button>
         </br>
         <div>
             <table class="table table-hover table-fixed" id="todoTableId">
                 <thead>
                     <tr>
-                        <th>TodoItems</th>
+                        <th id="todoItemsHeaderId">
+                            <a href="#">TodoItems</a>
+                            </th>
                         <th>Actions</th>
                     </tr>
                 </thead>
